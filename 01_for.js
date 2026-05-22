@@ -57,5 +57,32 @@ while (w2 >= 0) {
 }
 
 // 무한반복
+// for (;;) {
+//   // for의 무한반복
+//   console.log("크크크킄");
+// }
+// while (true) {
+//   // while의 무한 반복
+// }
 
 // 중첩 for문
+// 중첩은 몇 번까지? -> bigO -> O^2 / O*logO
+// if, switch, while, for 모두 겹칠 수 있음
+// for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//     console.log(`i ${i} j ${j}`);
+//   }
+// }
+// 표 형태의 데이터를 탐색할 때 (행-열)
+const matrix = [
+  [1, "윌리엄", "바나나를 좋아함"],
+  [2, "김자바", "김을 좋아함"],
+  [3, "박자스", "undefined를 좋아함"],
+];
+for (let i = 0; i < matrix.length; i++) {
+  console.log(matrix[i]);
+  for (let j = 0; j < matrix[0].length; j++) {
+    console.log(matrix[i][j]);
+  }
+}
+// 그리드 형태로 되어 있는 탐색 문제... 
