@@ -15,6 +15,7 @@ while (w < 5) {
 }
 
 // for (초기식;조건식;증감식) {}
+// for (초기식;종료식;변화식) {}
 // for (const i = 0; i < 5; i++) { // Assignment to constant variable.
 for (let i = 0; i < 5; i++) {
   console.log(i);
@@ -41,4 +42,20 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 // 역방향
+console.log("[역방향]");
+// for (let i = arr.length; i > 0; i--) {
+//   console.log(arr[i - 1]);
+// }
+for (let i = arr.length - 1; i >= 0; i--) {
+  console.log(arr[i]);
+}
+// while문으로 구현한다면
+let w2 = arr.length - 1;
+while (w2 >= 0) {
+  console.log(arr[w2]);
+  w2--;
+}
+
+// 무한반복
+
 // 중첩 for문
